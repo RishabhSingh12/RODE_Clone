@@ -2,7 +2,7 @@
 
 This assignment was given as a task in [ineuron's](https://ineuron.ai/course/Full-Stack-JavaScript-Bootcamp-2.0) full stack javascript bootcamp by Hitesh Choudhary sir.
 
-- This assignment is to replicate a landing page was supposed to be done using Tailwind CSS or Bootstrap.
+- This assignment is to replicate the landing page of [Rode Website](https://rode.com/) and was supposed to be done using Tailwind CSS or Bootstrap.
 
 - This project took around 5 hrs to complete.
 
