@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="scroll-smooth">
+    <!-- -------------------navbar------------------- -->
+    <nav class="flex flex-col fixed bg-white top-0 w-full z-[500]">
+        <!-- ------navbar section1------ -->
+        <sec class="sec-1 hidden lg:flex justify-between p-1 px-[120px] ">
+            <span class=" flex flex-row items-center">
+                <i class="fa-solid fa-location-dot text-lg pr-1"></i>
+                <p class="pr-1">EN</p>
+                <i class="fa-solid fa-caret-down"></i>
+            </span>
+            <i class="fa-regular fa-user "></i>
+        </sec>
+
+        <hr class="text-black " />
+        <!-- ------navbar section2------ -->
+        <sec class="sec-2 flex justify-between items-center py-3 px-5 lg:px-[120px] w-full ">
+            <span class="span1 flex flex-row items-center font-thin lg:hidden">
+                <i class="fa-solid fa-bars pr-8"></i>
+                <i class="fa-solid fa-location-dot  pr-1"></i>
+                <p class="pr-1">EN</p>
+                <i class="fa-solid fa-caret-down"></i>
+            </span>
+
+            <!-- ----logo---- -->
+            <div class="logo-container mr-8">
+                <img src="./assets/RODE-Logo.svg" alt="RODE-Logo" class="w-[85px]">
+            </div>
+
+            <div class="menu-options hidden lg:flex justify-evenly gap-x-[60px]">
+                <p class="option-item">PRODUCTS</p>
+                <p class="option-item">USER GUIDES</p>
+                <p class="option-item">SOLUTIONS</p>
+                <p class="option-item">APPAREL</p>
+                <p class="option-item">SUPPORT</p>
+            </div>
+
+            <span class="search-icon lg:text-xl">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+        </sec>
+    </nav>
+
+    <!-- ------------section1---------------- -->
+    <section
+        class="lg:bg-[url('./assets/RODEX_Prelaunch.jpg')] bg-[url('./assets/RODEX_Prelaunch-medium.jpg')] h-[400px] sm:h-[600px] lg:h-[700px] bg-center bg-cover bg-no-repeat flex flex-col lg:flex-row items-center justify-center mt-10">
+        <div
+            class="learn-more-logo py-4 px-1 lg:ml-[50%] sm:mt-[820px] md:mt-[900px] mt-[580px] lg:mt-[0px] w-full bg-black lg:bg-transparent flex flex-col items-center gap-y-5">
+            <img loading="lazy" src="./assets/rode-text3.svg" alt="rode-text3"
+                class="w-[400px] sm:w-[520px] md:w-[700px] lg:w-[550px] mx-auto">
+            <button
+                class="btn-1 px-5 py-1 sm:px-6 mx-auto bg-red-600 lg:bg-black lg:text-red-600 rounded-[25px] font-semibold uppercase cursor-pointer border-2 border-transparent hover:bg-red-400 lg:hover:text-white hover:border-black">Learn
+                More</button>
+        </div>
+
+    </section>
+
+    <!-- ------section2---------- -->
+    <section
+        class="lg:bg-[url('./assets/rodecaster-pro-2-home-large.jpg')] bg-[url('./assets/rodecaster-pro-2-home-medium.jpg')] h-[400px] sm:h-[600px] lg:h-[700px] mt-[190px] sm:mt-[240px] md:mt-[310px] lg:mt-[0px] bg-center bg-cover bg-no-repeat flex flex-col lg:flex-row items-center justify-center">
+        <div
+            class="learn-more-logo py-4 lg:ml-[50%] sm:mt-[800px] md:mt-[870px] mt-[640px] lg:mt-[0px] w-full bg-black lg:bg-transparent flex flex-col items-center gap-y-5">
+            <img loading="lazy" src="./assets/RODECasterProtext2.svg" alt="rode-text3"
+                class="w-[400px] sm:w-[520px] md:w-[700px] lg:w-[550px] mx-auto">
+            <!-- <button
+                class="btn-1 px-5 py-1 sm:px-6 mx-auto bg-red-600 lg:bg-black lg:text-red-600 rounded-[25px] font-semibold uppercase">Learn
+                More</button> -->
+
+            <h2 class="heading-text text-center text-white text-2xl font-semibold mt-2">The Revolution Is Here</h2>
+
+            <p class="text text-[#756c64] w-[90%] lg:w-[80%] lg:text-center mt-1">The RØDECaster Pro II is the world's
+                most
+                powerful all-in-one
+                audio
+                solution
+                for streamers, podcasters, musicians, and
+                creators. Take your content to the next level.
+            </p>
+
+            <span class="flex gap-x-4 items-center cursor-pointer">
+                <div class="learn-more-sec text-[#ad9970] font-semibold uppercase">Learn More <i
+                        class="fa-solid fa-chevron-right"></i></div>
+                <button
+                    class="buy-now text-white font-semibold uppercase px-4 py-1 rounded-[20px] bg-[#ad9970] border-2 border-transparent hover:bg-white hover:border-[#ad9970] hover:text-[#ad9970]">Buy
+                    Now</button>
+            </span>
+        </div>
+    </section>
+
+    <!-- ------------section3-------------- -->
+    <section
+        class="lg:bg-[url('./assets/nth100-large.jpg')] bg-[url('./assets/nth100-medium.png')] h-[400px] sm:h-[600px] lg:h-[700px] mt-[255px] sm:mt-[220px] md:mt-[270px] lg:mt-[0px] bg-center bg-cover bg-no-repeat flex flex-col lg:flex-row items-center justify-center">
+        <div
+            class="learn-more-logo py-4 lg:mr-[50%] sm:mt-[800px] md:mt-[870px] mt-[640px] lg:mt-[0px] w-full bg-white lg:bg-transparent flex flex-col items-center gap-y-5">
+            <img loading="lazy" src="./assets/NTH-100.svg" alt="nth-100"
+                class="w-[400px] sm:w-[680px] md:w-[700px] lg:w-[550px] mx-auto">
+            <!-- <button
+                class="btn-1 px-5 py-1 sm:px-6 mx-auto bg-red-600 lg:bg-black lg:text-red-600 rounded-[25px] font-semibold uppercase">Learn
+                More</button> -->
+
+            <h2 class="heading-text text-center text-black text-2xl font-semibold mt-2">Your Search For The Perfect
+                Headphones Is Over</h2>
+
+            <p class="text text-[#756c64] w-[90%] lg:w-[80%] lg:text-center mt-1">Experience sound like never before
+                with the NTH-100s. Exceptional sonic performance, superior comfort and iconic looks
+                that inspires creativity.
+            </p>
+
+            <span class="flex gap-x-4 items-center cursor-pointer">
+                <div class="learn-more-sec text-[#ad9970] font-semibold uppercase">Learn More <i
+                        class="fa-solid fa-chevron-right"></i></div>
+                <button
+                    class="buy-now text-white font-semibold uppercase px-4 py-1 rounded-[20px] bg-[#ad9970] border-2 border-transparent hover:bg-white hover:border-[#ad9970] hover:text-[#ad9970]">Buy
+                    Now</button>
+            </span>
+        </div>
+    </section>
+
+    <!-- ---------------section4------------------ -->
+    <section
+        class="lg:bg-[url('./assets/nt-usb-large.jpg')] bg-[url('./assets/nt-usb-md.jpg')] h-[400px] sm:h-[600px] lg:h-[700px] mt-[255px] sm:mt-[220px] md:mt-[270px] lg:mt-[0px] bg-center bg-cover bg-no-repeat flex flex-col lg:flex-row items-center justify-center">
+        <div
+            class="learn-more-logo py-4 lg:ml-[50%] sm:mt-[800px] md:mt-[870px] mt-[640px] lg:mt-[0px] w-full bg-white lg:bg-transparent flex flex-col items-center gap-y-5">
+            <img loading="lazy" src="./assets/NT-USB.svg" alt="rode-text3"
+                class="w-[400px] sm:w-[680px] md:w-[700px] lg:w-[550px] mx-auto">
+            <!-- <button
+                class="btn-1 px-5 py-1 sm:px-6 mx-auto bg-red-600 lg:bg-black lg:text-red-600 rounded-[25px] font-semibold uppercase">Learn
+                More</button> -->
+
+            <h2 class="heading-text text-center text-black text-2xl font-semibold mt-2">Studio-Quality Recording, Made
+                Simple</h2>
+
+            <p class="text text-[#756c64] w-[90%] lg:w-[80%] lg:text-center mt-1">The NT-USB is a studio-quality USB
+                condenser microphone that offers impeccable audio, elegant looks and premium
+                features, all in an easy-to-use form factor, the NT-USB will have you sounding like a pro in seconds.
+            </p>
+
+            <span class="flex gap-x-4 items-center cursor-pointer">
+                <div class="learn-more-sec text-[#ad9970] font-semibold uppercase">Learn More <i
+                        class="fa-solid fa-chevron-right"></i></div>
+                <button
+                    class="buy-now text-white font-semibold uppercase px-4 py-1 rounded-[20px] bg-[#ad9970] border-2 border-transparent hover:bg-white hover:border-[#ad9970] hover:text-[#ad9970]">Buy
+                    Now</button>
+            </span>
+        </div>
+    </section>
+
+    <!-- --------------------section-explore-------------------- -->
+    <section class="explore mt-[290px] lg:mt-[80px] pb-[40px]">
+        <h2 class="heading-text text-center text-3xl py-5 font-semibold text-[#767676]">Explore The RØDE Range</h2>
+
+        <!-- ----------------image-section1----------------- -->
+        <section class="microphone py-4">
+            <div class="microphone-img w-[100%] relative">
+                <img loading="lazy" src="./assets/explore-sec-assets/microphones.png" alt="microphone-img"
+                    class="mx-auto w-[90%] lg:w-[70%] cursor-pointer ">
+
+                <div
+                    class="hover-dark  h-full w-[90%] lg:w-[70%] left-[5%] absolute top-0 lg:left-[15%] hover:bg-[#7e83882b]">
+                </div>
+
+                <div class="center-image">
+                    <img loading="lazy"
+                        src="./assets/explore-sec-assets/images_page_1_modules_5364_microphones-text.svg"
+                        alt="microphone" class="absolute bottom-[30%] lg:w-[80%] left-[10%]">
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------------image-section2----------------- -->
+        <section class="microphone py-4">
+            <div class="microphone-img w-[100%] relative">
+                <img loading="lazy" src="./assets/explore-sec-assets/interfaces-module.jpg" alt="interfaces-module"
+                    class="mx-auto w-[90%] lg:w-[70%] cursor-pointer ">
+
+                <div
+                    class="hover-dark  h-full w-[90%] lg:w-[70%] left-[5%] absolute top-0 lg:left-[15%] hover:bg-[#7e83882b]">
+                </div>
+
+                <div class="center-image">
+                    <img loading="lazy" src="./assets/explore-sec-assets/interfaces-text.svg" alt="interfaces-text"
+                        class="absolute bottom-[30%] lg:w-[80%] left-[5%] lg:left-[10%]">
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------------image-section3----------------- -->
+        <section class="microphone py-4">
+            <div class="microphone-img w-[100%] relative">
+                <img loading="lazy" src="./assets/explore-sec-assets/software-module.png" alt="software-module"
+                    class="mx-auto w-[90%] lg:w-[70%] cursor-pointer ">
+
+                <div
+                    class="hover-dark  h-full w-[90%] lg:w-[70%] left-[5%] absolute top-0 lg:left-[15%] hover:bg-[#7e83882b]">
+                </div>
+
+                <div class="center-image">
+                    <img loading="lazy" src="./assets/explore-sec-assets/software-text.svg" alt="software-text"
+                        class="absolute bottom-[30%] lg:w-[80%] left-[5%] lg:left-[8%]">
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------------image-section4----------------- -->
+        <section class="microphone py-4">
+            <div class="microphone-img w-[100%] relative">
+                <img loading="lazy" src="./assets/explore-sec-assets/accessories-module.png" alt="accessories-module"
+                    class="mx-auto w-[90%] lg:w-[70%] cursor-pointer ">
+
+                <div
+                    class="hover-dark  h-full w-[90%] lg:w-[70%] left-[5%] absolute top-0 lg:left-[15%] hover:bg-[#7e83882b]">
+                </div>
+
+                <div class="center-image">
+                    <img loading="lazy" src="./assets/explore-sec-assets/accessories-text.svg" alt="accessories-text"
+                        class="absolute bottom-[30%] lg:w-[80%] left-[5%] lg:left-[8%]">
+                </div>
+            </div>
+        </section>
+        <h2 class="sec-title mt-8 text-[#ad9970] text-center font-semibold text-4xl">Latest From The RØDE Blog</h2>
+    </section>
+
+    <!-- -------------------latest blog sections--------------------- -->
+    <section
+        class="flex flex-col items-center sm:items-start sm:flex-row sm:flex-wrap justify-center bg-[#f8f9fa]  p-1 py-[40px] pb-[60px] gap-y-7 gap-x-4 lg:gap-x-10">
+        <!-- --------------card1----------------- -->
+        <div
+            class="card-container1 flex flex-col justify-around items-center gap-y-2 w-[90%] lg:w-[34%] sm:w-[45%] h-[730px] sm:[700px] lg:h-[750px] py-2 bg-white ">
+            <h2 class="card-title text-center font-medium text-[27px] p-1 text-[#212529]">XLR vs USB Microphones: Which
+                is Best for
+                You?
+            </h2>
+            <div class="card-img">
+                <img loading="lazy" src="./assets/xlr.jpg" alt="xlr">
+            </div>
+            <div class="card-description lg:text-base text-lg text-center p-4 pb-10">
+                <p class="text-[#212529]">We explore the differences between XLR and USB microphones, the advantages of
+                    each and which type is
+                    best suited to your
+                    needs.</p>
+            </div>
+            <button
+                class="learn-more-btn text-white font-semibold uppercase px-4 py-1 rounded-[20px] bg-[#ad9970] border-2 border-transparent hover:bg-white hover:border-[#ad9970] hover:text-[#ad9970]">Learn
+                More</button>
+        </div>
+
+        <!-- --------------card2----------------- -->
+        <div
+            class="card-container2 flex flex-col items-center justify-around gap-y-2 w-[90%] lg:w-[34%] sm:w-[45%] h-[730px] sm:[700px] lg:h-[750px] bg-white py-2">
+            <h2 class="card-title text-center font-medium text-[25px] p-1  lg:py-[0px] text-[#212529]">The
+                Difference
+                Between
+                Large-Diaphragm and
+                Small-Diaphragm Condenser Microphones
+            </h2>
+            <div class="card-img">
+                <img loading="lazy" src="./assets/condenser.jpeg" alt="condenser">
+            </div>
+            <div class="card-description lg:text-base text-lg text-center p-4 pb-10">
+                <p class="text-[#212529]">We explore the difference between large- and small-diaphragm condenser
+                    microphones, and what each is
+                    best used for.</p>
+            </div>
+            <button
+                class="learn-more-btn text-white font-semibold uppercase px-4 py-1 rounded-[20px] bg-[#ad9970] border-2 border-transparent hover:bg-white hover:border-[#ad9970] hover:text-[#ad9970]">Learn
+                More</button>
+        </div>
+
+        <!-- --------------card3----------------- -->
+        <div
+            class="card-container3 flex flex-col items-center justify-around gap-y-2 w-[90%] lg:w-[34%] sm:w-[45%] h-[730px] sm:[700px] lg:h-[750px] bg-white py-2">
+            <h2 class="card-title text-center font-medium text-[25px] p-1 lg:py-[0px] text-[#212529]">What is a
+                Condenser Microphone
+                and When to Use One
+            </h2>
+            <div class="card-img">
+                <img loading="lazy" src="./assets/condensor&mic.jpg" alt="condensor">
+            </div>
+            <div class="card-description lg:text-base text-lg text-center p-4 pb-10">
+                <p class="text-[#212529]">Learn more about the different types of condenser mics, how they work and the
+                    best applications for
+                    using them.</p>
+            </div>
+            <button
+                class="learn-more-btn text-white font-semibold uppercase px-4 py-1 rounded-[20px] bg-[#ad9970] border-2 border-transparent hover:bg-white hover:border-[#ad9970] hover:text-[#ad9970]">Learn
+                More</button>
+        </div>
+
+        <!-- --------------card4----------------- -->
+        <div
+            class="card-container4 flex flex-col items-center justify-around gap-y-2 w-[90%] lg:w-[34%] sm:w-[45%] h-[730px] sm:[700px] lg:h-[750px] bg-white py-2">
+            <h2 class="card-title text-center font-medium text-[25px] p-1 lg:py-[0px] text-[#212529]">Firmware Version
+                1.0.7 for the
+                RØDECaster Pro II is Available Now
+            </h2>
+            <div class="card-img">
+                <img loading="lazy" src="./assets/firmware.jpg" alt="firmware">
+            </div>
+            <div class="card-description lg:text-base text-lg text-center text-[#212529] p-4 pb-10">
+                <p>Firmware version 1.0.7 includes key feature additions, such as custom routing for USB and Bluetooth
+                    outputs, and more..</p>
+            </div>
+            <button
+                class="learn-more-btn text-white font-semibold uppercase px-4 py-1 rounded-[20px] bg-[#ad9970] border-2 border-transparent hover:bg-white hover:border-[#ad9970] hover:text-[#ad9970]">Learn
+                More</button>
+        </div>
+    </section>
+
+    <footer class="bg-white py-8">
+        <hr class="mt-[60px]" />
+        <div class="footer-main flex flex-col lg:flex-row lg:items-start lg:justify-evenly lg:spx-[100px]">
+            <div class="footer-logo pt-8 flex justify-center items-center">
+                <img loading="lazy" src="./assets/RODE-footer.svg" alt="RODE-footer">
+            </div>
+            <div class="footer-list-container py-8">
+
+                <!-- ------footerlist for small screen------- -->
+                <div class="small-screen-footer mx-auto w-[90%] sm:hidden cursor-pointer 
+                ">
+                    <hr class="py-2 mx-4" />
+                    <div class="small-list1  flex justify-between mb-4">
+                        <span class="text-lg">Products</span>
+                        <i class="fa-solid fa-plus text-xl"></i>
+                    </div>
+                    <hr class="py-4 mx-4" />
+                    <div class="small-list2 flex justify-between  mb-4">
+                        <span class="text-lg">Support</span>
+                        <i class="fa-solid fa-plus text-xl"></i>
+                    </div>
+                    <hr class="py-4 mx-4" />
+                    <div class="small-list3 flex justify-between  mb-4">
+                        <span class="text-lg">Company</span>
+                        <i class="fa-solid fa-plus text-xl"></i>
+                    </div>
+                    <hr class="py-4 mx-4" />
+                    <div class="small-list4 flex justify-between  mb-4">
+                        <span class="text-lg">Account</span>
+                        <i class="fa-solid fa-plus text-xl"></i>
+                    </div>
+                    <hr />
+                </div>
+
+                <!-- ---------footer-list for large screen-------- -->
+                <div class="large-screen-footerlist hidden sm:flex sm:flex-col lg:ml-[50px] lg:flex-row">
+                    <div class="large-footer-list flex flex-wrap sm:justify-evenly gap-x-6 cursor-pointer ">
+                        <div class="list1 flex flex-col gap-y-2">
+                            <p class="font-semibold">Products</p>
+                            <p>Microphones</p>
+                            <p>Headphones</p>
+                            <p>Interfaces and Mixers</p>
+                            <p>Accessories</p>
+                            <p>Apparel</p>
+                        </div>
+                        <div class="list2 flex flex-col gap-y-2">
+                            <p class="font-semibold">Support</p>
+                            <p>Contact RØDE</p>
+                            <p>Service Centre</p>
+                            <p>Warranty</p>
+                            <p>Where to Buy</p>
+                        </div>
+                        <div class="list3 flex flex-col gap-y-2">
+                            <p class="font-semibold">Company</p>
+                            <p>About RØDE</p>
+                            <p>News and Info</p>
+                            <p>Job Opportunities</p>
+                        </div>
+                        <div class="list4 flex flex-col gap-y-2">
+                            <p class="font-semibold">Account</p>
+                            <p>Manage your Account</p>
+                            <p>Create Account</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ------------footer-signup-section----------- -->
+            <div class="footer-signup flex flex-col mt-5 items-center lg:items-end lg:w-[20%] gap-y-5">
+                <h2 class="signup-title text-3xl font-medium text-center lg:text-end px-2 ">Subscribe to our latest
+                    news and
+                    offers</h2>
+                <button
+                    class="learn-more-btn text-white font-semibold uppercase px-4 py-1 rounded-[20px] bg-[#ad9970] border-2 border-transparent hover:bg-white hover:border-[#ad9970] hover:text-[#ad9970]">Sign
+                    Up</button>
+            </div>
+        </div>
+        <hr class="my-5" />
+        <!-- -----------------footer-end------------------ -->
+        <div
+            class="footer-end flex  flex-col-reverse md:flex-row md:flex-wrap justify-around items-center text-sm px-9 gap-y-5">
+            <span>
+                © 2022 RØDE All Rights Reserved.
+            </span>
+            <span>
+                Privacy Policy
+                |
+                Terms & Conditions
+            </span>
+            <span class="text-[#ad9970] cursor-pointer">
+                <div class="social-icons flex justify-around text-3xl lg:gap-x-8">
+                    <i class="fa-brands fa-facebook mr-3"></i>
+                    <i class="fa-brands fa-twitter mr-3"></i>
+                    <i class="fa-brands fa-instagram mr-3"></i>
+                    <i class="fa-brands fa-youtube mr-3"></i>
+                </div>
+            </span>
+        </div>
+    </footer>
+</body>
+
+</html>
